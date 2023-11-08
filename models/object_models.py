@@ -128,3 +128,29 @@ class Country(object):
     
     def authors_count(self)->int:
         return len(self.authors)
+    
+
+class BookHouse(object):
+    '''
+    BookHouse object that manipulate information on books, authors, countries, editorials
+    
+    BooHouse has a list of books, countries, authors and editorials
+    
+    
+    '''
+    authors: List
+    books: List
+    editorials: List
+    countries: List
+    
+    def __init__(self):
+      self.authors: List[Author] = []
+      self.books: List[Book] = []
+      self.editorials: List[Editorial] = []
+      self.countries: List[Country] = []
+
+    '''
+    get data of books api and storage in BookHouse List
+    '''
+    def get_data(self):
+     pass
